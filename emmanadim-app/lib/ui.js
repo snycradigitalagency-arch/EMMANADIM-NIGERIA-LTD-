@@ -14,26 +14,26 @@ export function Eyebrow({ children, dark }) {
   );
 }
 
-export function PrimaryButton({ children, onClick, icon: Icon, href, className = "" }) {
+export function PrimaryButton({ children, onClick, icon, href, className = "" }) {
   const cls = `inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm tracking-wide transition-all duration-300 ${className}`;
   const style = { background: "#1E4D3A", color: "#F7F4ED", fontFamily: "Manrope, sans-serif", fontWeight: 600, borderRadius: 2 };
   const handlers = {
     onMouseEnter: (e) => (e.currentTarget.style.background = "#163B2C"),
     onMouseLeave: (e) => (e.currentTarget.style.background = "#1E4D3A"),
   };
-  if (href) return <Link href={href} className={cls} style={style} {...handlers}>{children}{Icon} />}</Link>;
-  return <button type="button" onClick={onClick} className={cls} style={style} {...handlers}>{children}{Icon} />}</button>;
+  if (href) return <Link href={href} className={cls} style={style} {...handlers}>{children}{icon}</Link>;
+  return <button type="button" onClick={onClick} className={cls} style={style} {...handlers}>{children}{icon}</button>;
 }
 
-export function SecondaryButton({ children, onClick, Icon, href, className = "" }) {
+export function SecondaryButton({ children, onClick, icon, href, className = "" }) {
   const cls = `inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm tracking-wide border transition-all duration-300 ${className}`;
   const style = { borderColor: "#C8A542", color: "#1E4D3A", background: "transparent", fontFamily: "Manrope, sans-serif", fontWeight: 600, borderRadius: 2 };
   const handlers = {
     onMouseEnter: (e) => { e.currentTarget.style.background = "#C8A542"; e.currentTarget.style.color = "#1E4D3A"; },
     onMouseLeave: (e) => { e.currentTarget.style.background = "transparent"; e.currentTarget.style.color = "#1E4D3A"; },
   };
-  if (href) return <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className={cls} style={style} {...handlers}>{children}{Icon} />}</a>;
-  return <button type="button" onClick={onClick} className={cls} style={style} {...handlers}>{children}{Icon} />}</button>;
+  if (href) return <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className={cls} style={style} {...handlers}>{children}{icon}</a>;
+  return <button type="button" onClick={onClick} className={cls} style={style} {...handlers}>{children}{icon}</button>;
 }
 
 export function MediaFrame({ label, sublabel, ratio = "4/5", imageUrl, className = "" }) {
@@ -107,8 +107,8 @@ export function CTABanner({ whatsapp }) {
           <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2.2rem", color: "#F7F4ED" }}>Ready to elevate your space?</h2>
           <p className="mt-4 text-base" style={{ color: "#C9D3CC", fontFamily: "Manrope, sans-serif" }}>Tell us about your project and receive a tailored quotation within 24 hours.</p>
           <div className="flex flex-wrap gap-4 justify-center mt-9">
-            <PrimaryButton href="/quote" icon={ChevronRight size={16} />} }>Request a Quote</PrimaryButton>
-            <SecondaryButton href={`https://wa.me/${whatsapp}`} icon={MessageCircle size={16} />} className="!text-[#F7F4ED] !border-[#C8A542]">Chat on WhatsApp</SecondaryButton>
+            <PrimaryButton href="/quote" icon={<ChevronRight size={16} />}>Request a Quote</PrimaryButton>
+            <SecondaryButton href={`https://wa.me/${whatsapp}`} icon={<MessageCircle size={16} />} className="!text-[#F7F4ED] !border-[#C8A542]">Chat on WhatsApp</SecondaryButton>
           </div>
         </FadeIn>
       </div>

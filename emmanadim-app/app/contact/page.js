@@ -62,7 +62,7 @@ export default async function ContactPage() {
             <p className="mt-4 text-base" style={{ color: "#C9D3CC", fontFamily: "Manrope, sans-serif" }}>Message us on WhatsApp for the fastest response.</p>
             <div className="flex flex-wrap gap-4 justify-center mt-8">
               <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-7 py-3.5 text-sm" style={{ background: "#C8A542", color: "#1E4D3A", fontFamily: "Manrope, sans-serif", fontWeight: 600, borderRadius: 2 }}><MessageCircle size={16} /> Chat on WhatsApp</a>
-              <PrimaryButton href="/quote" icon={ArrowRight}>Request a Quote</PrimaryButton>
+              <PrimaryButton href="/quote" icon={<ArrowRight size={16} />}>Request a Quote</PrimaryButton>
             </div>
           </FadeIn>
         </div>

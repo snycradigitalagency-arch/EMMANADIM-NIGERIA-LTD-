@@ -34,8 +34,8 @@ export default async function HomePage() {
           </FadeIn>
           <FadeIn delay={300}>
             <div className="flex flex-wrap gap-4 mt-10">
-              <PrimaryButton href="/quote" icon={ArrowRight}>Request a Quote</PrimaryButton>
-              <SecondaryButton href={`tel:${contact.phone_href}`} icon={Phone} className="!text-[#F7F4ED] !border-[#C8A542]">Call Now</SecondaryButton>
+              <PrimaryButton href="/quote" icon={<ArrowRight size={16} />}>Request a Quote</PrimaryButton>
+              <SecondaryButton href={`tel:${contact.phone_href}`} icon={<Phone size={16} />} className="!text-[#F7F4ED] !border-[#C8A542]">Call Now</SecondaryButton>
               <a href={`https://wa.me/${contact.whatsapp}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm" style={{ color: "#C8A542", fontFamily: "Manrope, sans-serif", fontWeight: 600 }}>
                 <MessageCircle size={17} /> Chat on WhatsApp
               </a>
@@ -62,7 +62,7 @@ export default async function HomePage() {
                 </div>
               ))}
             </div>
-            <div className="mt-10"><SecondaryButton href="/about" icon={ChevronRight}>Read Our Story</SecondaryButton></div>
+            <div className="mt-10"><SecondaryButton href="/about" icon={<ChevronRight size={16} />}>Read Our Story</SecondaryButton></div>
           </FadeIn>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default async function HomePage() {
         <div className="max-w-7xl mx-auto px-6 lg:px-10">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <FadeIn><Eyebrow>Recent Work</Eyebrow><h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2.4rem", color: "#1E4D3A" }}>A glimpse into completed projects.</h2></FadeIn>
-            <SecondaryButton href="/projects" icon={ChevronRight}>View All Projects</SecondaryButton>
+            <SecondaryButton href="/projects" icon={<ChevronRight size={16} />}>View All Projects</SecondaryButton>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-14">
             {projects.slice(0, 3).map((p) => (

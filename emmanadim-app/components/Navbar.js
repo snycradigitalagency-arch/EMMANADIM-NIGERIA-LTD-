@@ -65,7 +65,7 @@ export default function Navbar({ whatsapp }) {
             </Link>
           ))}
           <div className="flex flex-col gap-3 pt-3 border-t" style={{ borderColor: "#EAEAEA" }}>
-            <SecondaryButton href={`https://wa.me/${whatsapp}`} icon={MessageCircle}>WhatsApp Us</SecondaryButton>
+            <SecondaryButton href={`https://wa.me/${whatsapp}`} icon={<MessageCircle size={16} />}>WhatsApp Us</SecondaryButton>
             <PrimaryButton href="/quote">Request Quote</PrimaryButton>
           </div>
         </div>
