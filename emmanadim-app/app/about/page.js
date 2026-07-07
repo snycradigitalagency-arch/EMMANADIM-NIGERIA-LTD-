@@ -33,7 +33,7 @@ export default async function AboutPage() {
             <p className="mt-6 text-base leading-relaxed" style={{ color: "#666", fontFamily: "Manrope, sans-serif" }}>EMMANADIM began with a simple belief: that quality interior décor shouldn't be reserved for a handful of showrooms in Victoria Island. We started by furnishing individual homes across Lekki and Ajah, and grew — almost entirely by word of mouth — into a company trusted by real estate developers, church ministries and hospitality brands across Lagos.</p>
             <p className="mt-4 text-base leading-relaxed" style={{ color: "#666", fontFamily: "Manrope, sans-serif" }}>Today, our workshop and showroom locations on the Lekki-Epe corridor serve clients from initial consultation through to final installation — sourcing, upholstery, fabrication and outdoor décor, all under one roof.</p>
           </FadeIn>
-          <FadeIn delay={150} className="order-1 lg:order-2"><MediaFrame label="EMMANADIM Workshop" sublabel="Lekki-Epe Corridor, Lagos" ratio="4/5" imageUrl="https://picsum.photos/seed/emmanadim-workshop/1000/1250" /></FadeIn>
+          <FadeIn delay={150} className="order-1 lg:order-2"><MediaFrame label="EMMANADIM Workshop" sublabel="Lekki-Epe Corridor, Lagos" ratio="4/5" imageUrl="https://images.pexels.com/photos/6312360/pexels-photo-6312360.jpeg?auto=compress&cs=tinysrgb&w=1200" /></FadeIn>
         </div>
       </section>
 
@@ -56,7 +56,7 @@ export default async function AboutPage() {
 
       <section className="py-28" style={{ background: "#1E4D3A" }}>
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-12 items-center">
-          <FadeIn><div style={{ width: 180, height: 180 }}><MediaFrame label="Founder" sublabel="" ratio="1/1" imageUrl="https://picsum.photos/seed/emmanadim-founder/400/400" /></div></FadeIn>
+          <FadeIn><div style={{ width: 180, height: 180 }}><MediaFrame label="Founder" sublabel="" ratio="1/1" /></div></FadeIn>
           <FadeIn delay={150}>
             <Quote size={26} color="#C8A542" className="mb-6" />
             <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.5rem", color: "#F7F4ED", lineHeight: 1.5, fontStyle: "italic" }}>We built EMMANADIM on a simple rule — never sell a client something we wouldn't put in our own homes. Every quotation that leaves this company reflects that.</p>

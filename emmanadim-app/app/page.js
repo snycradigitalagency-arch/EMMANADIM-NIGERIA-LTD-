@@ -23,7 +23,12 @@ export default async function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden" style={{ background: "#1E4D3A" }}>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="https://images.pexels.com/photos/18943248/pexels-photo-18943248.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(90deg, rgba(30,77,58,0.92) 0%, rgba(30,77,58,0.75) 45%, rgba(30,77,58,0.35) 100%)" }} />
+        </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-10 pt-40 pb-28 relative">
           <FadeIn><Eyebrow dark>Lagos's Home for Refined Living</Eyebrow></FadeIn>
           <FadeIn delay={100}>
@@ -49,7 +54,7 @@ export default async function HomePage() {
       {/* ABOUT TEASER */}
       <section className="py-28" style={{ background: "#FFFFFF" }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <FadeIn><MediaFrame label="From the EMMANADIM Showroom" sublabel="Project photography" ratio="4/5" imageUrl="https://picsum.photos/seed/emmanadim-showroom/1000/1250" /></FadeIn>
+          <FadeIn><MediaFrame label="From the EMMANADIM Showroom" sublabel="Project photography" ratio="4/5" imageUrl="https://images.pexels.com/photos/6186813/pexels-photo-6186813.jpeg?auto=compress&cs=tinysrgb&w=1200" /></FadeIn>
           <FadeIn delay={150}>
             <Eyebrow>Our Story</Eyebrow>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2.4rem", color: "#1E4D3A", lineHeight: 1.2 }}>Fifteen years of furnishing Lagos's finest interiors.</h2>
