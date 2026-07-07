@@ -49,7 +49,7 @@ export default async function HomePage() {
       {/* ABOUT TEASER */}
       <section className="py-28" style={{ background: "#FFFFFF" }}>
         <div className="max-w-7xl mx-auto px-6 lg:px-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <FadeIn><MediaFrame label="From the EMMANADIM Showroom" sublabel="Project photography" ratio="4/5" /></FadeIn>
+          <FadeIn><MediaFrame label="From the EMMANADIM Showroom" sublabel="Project photography" ratio="4/5" imageUrl="https://picsum.photos/seed/emmanadim-showroom/1000/1250" /></FadeIn>
           <FadeIn delay={150}>
             <Eyebrow>Our Story</Eyebrow>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: "2.4rem", color: "#1E4D3A", lineHeight: 1.2 }}>Fifteen years of furnishing Lagos's finest interiors.</h2>
@@ -121,7 +121,7 @@ export default async function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-14">
             {projects.slice(0, 3).map((p) => (
-              <FadeIn key={p.id}><MediaFrame label={p.title} sublabel={p.category} ratio={p.ratio} /></FadeIn>
+              <FadeIn key={p.id}><MediaFrame label={p.title} sublabel={p.category} ratio={p.ratio} imageUrl={p.image_url} /></FadeIn>
             ))}
           </div>
         </div>

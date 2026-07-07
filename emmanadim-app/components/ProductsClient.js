@@ -18,7 +18,7 @@ export default function ProductsClient({ products, whatsapp }) {
             return (
               <FadeIn key={product.id}>
                 <div className="group bg-white border" style={{ borderColor: "#EAEAEA" }}>
-                  <MediaFrame label={product.name} sublabel={product.category} ratio="1/1" />
+                  <MediaFrame label={product.name} sublabel={product.category} ratio="1/1" imageUrl={product.image_url} />
                   <div className="p-6">
                     <p className="text-[11px] uppercase tracking-wide" style={{ color: "#8A6E22", fontFamily: "Manrope, sans-serif", fontWeight: 600 }}>{product.category}</p>
                     <h3 className="mt-2" style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.1rem", color: "#1E4D3A" }}>{product.name}</h3>
