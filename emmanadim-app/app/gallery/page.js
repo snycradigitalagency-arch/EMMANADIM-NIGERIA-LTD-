@@ -2,6 +2,8 @@ import { PageHeader, CTABanner } from "@/lib/ui";
 import { getGallery, getContactInfo } from "@/lib/data";
 import GalleryClient from "@/components/GalleryClient";
 
+export const revalidate = 60;
+
 export const metadata = { title: "Gallery | EMMANADIM Nigeria Limited" };
 
 export default async function GalleryPage() {

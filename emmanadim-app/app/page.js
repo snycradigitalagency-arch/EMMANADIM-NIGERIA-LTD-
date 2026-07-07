@@ -3,6 +3,8 @@ import { ArrowRight, Phone, MessageCircle, ChevronRight, Quote, ShieldCheck, Awa
 import { Eyebrow, PrimaryButton, SecondaryButton, MediaFrame, FadeIn, CTABanner } from "@/lib/ui";
 import { getHero, getContactInfo, getServices, getProjects, getTestimonials, galleryImageUrl } from "@/lib/data";
 
+export const revalidate = 60;
+
 const ICON_MAP = { Sparkles, Frame, Armchair, Trees, Flower2, Award, PencilRuler, HeadphonesIcon, ShieldCheck, Truck };
 
 const WHY_US = [

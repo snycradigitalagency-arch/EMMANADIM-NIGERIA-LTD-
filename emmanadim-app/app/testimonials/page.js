@@ -2,6 +2,8 @@ import { Star } from "lucide-react";
 import { PageHeader, FadeIn, CTABanner } from "@/lib/ui";
 import { getTestimonials, getContactInfo } from "@/lib/data";
 
+export const revalidate = 60;
+
 export const metadata = { title: "Testimonials | EMMANADIM Nigeria Limited" };
 
 export default async function TestimonialsPage() {

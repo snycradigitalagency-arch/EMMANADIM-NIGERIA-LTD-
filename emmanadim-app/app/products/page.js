@@ -2,6 +2,8 @@ import { PageHeader, CTABanner } from "@/lib/ui";
 import { getProducts, getContactInfo } from "@/lib/data";
 import ProductsClient from "@/components/ProductsClient";
 
+export const revalidate = 60;
+
 export const metadata = { title: "Our Products | EMMANADIM Nigeria Limited" };
 
 export default async function ProductsPage() {

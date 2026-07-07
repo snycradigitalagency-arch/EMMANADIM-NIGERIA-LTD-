@@ -2,6 +2,8 @@ import { Target, Eye, Heart, ClipboardList, PencilRuler, PackageCheck, Hammer, Q
 import { Eyebrow, PageHeader, MediaFrame, FadeIn, CTABanner } from "@/lib/ui";
 import { getContactInfo } from "@/lib/data";
 
+export const revalidate = 60;
+
 const CORE_VALUES = [
   { icon: Target, title: "Our Mission", desc: "To furnish Nigerian homes and institutions with interior solutions that combine lasting quality with refined design — delivered with honesty at every step." },
   { icon: Eye, title: "Our Vision", desc: "To be the most trusted name in luxury interior décor across West Africa, known as much for reliability as for craftsmanship." },

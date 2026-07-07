@@ -2,6 +2,8 @@ import { Phone, Mail, Clock, ChevronRight, MessageCircle, ArrowRight } from "luc
 import { Eyebrow, PageHeader, FadeIn, PrimaryButton } from "@/lib/ui";
 import { getContactInfo } from "@/lib/data";
 
+export const revalidate = 60;
+
 export const metadata = { title: "Contact Us | EMMANADIM Nigeria Limited" };
 
 export default async function ContactPage() {

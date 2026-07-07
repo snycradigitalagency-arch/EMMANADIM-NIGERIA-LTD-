@@ -2,6 +2,8 @@ import { PageHeader, CTABanner } from "@/lib/ui";
 import { getProjects, getContactInfo } from "@/lib/data";
 import ProjectsClient from "@/components/ProjectsClient";
 
+export const revalidate = 60;
+
 export const metadata = { title: "Our Projects | EMMANADIM Nigeria Limited" };
 
 export default async function ProjectsPage() {

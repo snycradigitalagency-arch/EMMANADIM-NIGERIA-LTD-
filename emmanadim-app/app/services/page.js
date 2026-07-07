@@ -2,6 +2,8 @@ import { Sparkles, Frame, Armchair, Trees, Flower2, Award, PencilRuler, Headphon
 import { PageHeader, FadeIn, CTABanner } from "@/lib/ui";
 import { getServices, getContactInfo } from "@/lib/data";
 
+export const revalidate = 60;
+
 const ICON_MAP = { Sparkles, Frame, Armchair, Trees, Flower2, Award, PencilRuler, HeadphonesIcon, ShieldCheck, Truck, Star, Heart, Target, Eye, Users, ClipboardList, PackageCheck, Hammer, DoorOpen, MessageSquare };
 
 export const metadata = { title: "Our Services | EMMANADIM Nigeria Limited" };

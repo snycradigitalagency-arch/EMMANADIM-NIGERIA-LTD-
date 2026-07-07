@@ -2,6 +2,8 @@ import { PageHeader, CTABanner } from "@/lib/ui";
 import { getFaqs, getContactInfo } from "@/lib/data";
 import FaqsClient from "@/components/FaqsClient";
 
+export const revalidate = 60;
+
 export const metadata = { title: "FAQs | EMMANADIM Nigeria Limited" };
 
 export default async function FAQsPage() {

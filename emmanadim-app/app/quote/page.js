@@ -2,6 +2,8 @@ import { PageHeader } from "@/lib/ui";
 import { getProducts, getContactInfo } from "@/lib/data";
 import QuoteForm from "@/components/QuoteForm";
 
+export const revalidate = 60;
+
 export const metadata = { title: "Request a Quote | EMMANADIM Nigeria Limited" };
 
 export default async function QuotePage() {
